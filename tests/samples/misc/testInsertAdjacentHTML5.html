@@ -1,0 +1,20 @@
+<html>
+<body>
+<div id="five">five</div>
+<script>
+	var d5 = document.getElementById('five');
+	alert(d5.sourceIndex);
+	alert(d5.offsetParent);
+	alert(d5.offsetTop);
+	alert(d5.offsetLeft);
+	alert(d5.offsetWidth);
+	alert(d5.offsetHeight);
+
+	try {
+		d5.insertAdjacentHTML('notcorrect', '<div id="eight">eight</div>');
+	} catch(e) {
+		alert("insertAdjacentHTML does not support notcorrect operation");
+	}
+</script>
+</body>
+</html>
